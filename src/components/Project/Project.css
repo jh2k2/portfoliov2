@@ -1,0 +1,19 @@
+.ant-carousel .slick-slide {
+	text-align: center;
+	height: 50vh;
+	max-height: 50vh;
+	line-height: 160px;
+	overflow: hidden;
+}
+
+.gallery-content {
+	align-content: center;
+	padding: 0 2vw 0 2vw;
+	text-align: center;
+}
+
+.gallery-card {
+	width: 27vw;
+	display: inline-block;
+	margin: 1.5vw 1.5vw 1.5vw 1.5vw;
+}
