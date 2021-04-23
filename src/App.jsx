@@ -1,4 +1,4 @@
-import "antd/dist/antd.css";
+import "./styles/css/antd.css";
 import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
 import Project from "./components/Project/Project";
+import Career from "./components/Career/Career";
 
 const App = () => {
 	return (
@@ -21,6 +22,9 @@ const App = () => {
 					</Route>
 					<Route path="/Project" exact>
 						<Project></Project>
+					</Route>
+					<Route path="/Career" exact>
+						<Career></Career>
 					</Route>
 				</Switch>
 			</div>
