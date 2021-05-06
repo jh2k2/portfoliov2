@@ -2,6 +2,7 @@ import { Table, Tag, Space } from "antd";
 import _ from "lodash";
 import "./Proficiency.css";
 
+const prof_arr = ["beginner", "intermediate", "advanced"];
 const data = [
     {
         category: "Programming Language",
@@ -123,6 +124,7 @@ const data = [
         ...data,
         key: pos,
     }))
+    .sort((a, b) => prof_arr.indexOf(a.prof[0]) - 1)
     .sort((a, b) => (a.category > b.category ? 1 : -1));
 
 const category_filter = _.uniqBy(
