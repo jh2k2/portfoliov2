@@ -191,7 +191,11 @@ const Proficiency = () => {
                 columns={columns}
                 bordered
                 dataSource={data}
-                pagination={{ pageSize: 8, position: ["bottomCenter"] }}
+                pagination={{
+                    simple: true,
+                    pageSize: 8,
+                    position: ["bottomCenter"],
+                }}
             />
         </div>
     );
