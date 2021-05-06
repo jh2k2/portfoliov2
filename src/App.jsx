@@ -1,5 +1,4 @@
-import "./styles/css/antd.css";
-import "./App.css";
+import "./App.less";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
@@ -7,6 +6,7 @@ import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
 import Project from "./components/Project/Project";
 import Career from "./components/Career/Career";
+import Proficiency from "./components/Proficiency/Proficiency";
 
 const App = () => {
 	return (
@@ -25,6 +25,9 @@ const App = () => {
 					</Route>
 					<Route path="/Career" exact>
 						<Career></Career>
+					</Route>
+					<Route path="/Proficiency" exact>
+						<Proficiency></Proficiency>
 					</Route>
 				</Switch>
 			</div>

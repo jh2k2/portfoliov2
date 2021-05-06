@@ -1,18 +1,19 @@
 import "./Home.css";
-import { Typography, Divider } from "antd";
-const { Title, Paragraph } = Typography;
+import { Divider, Image } from "antd";
 
 const Home = () => {
-	return (
-		<>
-			<Typography>
-				<Title>Hi there! My name is Jerry Hsieh.</Title>
-				<Title level={3}>Welcome to my portfolio website~</Title>
-			</Typography>
+    return (
+        <div className="home-content">
+            <Image
+                className="home-img"
+                preview={false}
+                src="assets/image/home-avatar.jpg"
+            />
+            <h1>Hi there! My name is Jerry Hsieh</h1>
 
-			<Divider />
-		</>
-	);
+            <Divider />
+        </div>
+    );
 };
 
 export default Home;
