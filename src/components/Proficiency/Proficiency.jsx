@@ -87,7 +87,7 @@ const data = [
     {
         category: "Frontend Framework",
         name: "Vue",
-        prof: ["beginner"],
+        prof: ["intermediate"],
     },
     {
         category: "OS Virtualization",

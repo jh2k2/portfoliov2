@@ -67,13 +67,13 @@ const data = [
 ];
 
 const IndividualCard = (props) => {
-    const [state, setState] = useState({ key: "━━ Description ━━" });
+    const [state, setState] = useState({ key: "Description" });
 
     function description_getter(obj, key) {
         switch (key) {
-            case "━━ Tools ━━":
+            case "Tools":
                 return obj.tools.join(" • ");
-            case "━━ Description ━━":
+            case "Description":
                 return obj.description;
             default:
                 return "Text not found";
@@ -82,28 +82,28 @@ const IndividualCard = (props) => {
     return (
         <Card
             actions={[
-                state.key === "━━ Description ━━" ? (
+                state.key === "Description" ? (
                     <FileTextFilled
                         style={{ color: "#e85a4f" }}
                         key="description"
-                        onClick={() => setState({ key: "━━ Description ━━" })}
+                        onClick={() => setState({ key: "Description" })}
                     />
                 ) : (
                     <FileTextOutlined
                         key="description"
-                        onClick={() => setState({ key: "━━ Description ━━" })}
+                        onClick={() => setState({ key: "Description" })}
                     />
                 ),
-                state.key === "━━ Tools ━━" ? (
+                state.key === "Tools" ? (
                     <ToolFilled
                         style={{ color: "#e85a4f" }}
                         key="tool"
-                        onClick={() => setState({ key: "━━ Tools ━━" })}
+                        onClick={() => setState({ key: "Tools" })}
                     />
                 ) : (
                     <ToolOutlined
                         key="tool"
-                        onClick={() => setState({ key: "━━ Tools ━━" })}
+                        onClick={() => setState({ key: "Tools" })}
                     />
                 ),
                 <GithubOutlined

@@ -7,3 +7,22 @@
     border-style: solid;
     border-width: 1px;
 }
+
+.about-title {
+    font-family: momcake;
+    font-size: 10vh;
+    margin: 0;
+}
+
+.about-paragraph {
+    font-family: lato-regular;
+    font-size: 3vh;
+}
+
+.about-content {
+    width: 60vw;
+}
+
+.home-content {
+    display: inline-block;
+}
