@@ -20,8 +20,8 @@ const Home = () => {
                 </p>
                 <br />
                 <p className="about-paragraph">
-                    I am doing Computer Science as both hobby and profession. I
-                    enjoyed all field of Computer Science, and eagered to try
+                    I am doing Computer Science as both a hobby and my profession. I
+                    enjoyed all fields of Computer Science, and eagered to try
                     out new technologies. However, I am currently most
                     knowledgable in web development.
                 </p>
